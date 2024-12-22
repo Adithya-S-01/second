@@ -37,7 +37,7 @@ function Profile() {
 
   return (
     <div className="h-full bg-gray-100 p-5">
-      <div className="w-1/2 bg-white shadow-md h-full mx-auto rounded-lg">
+      <div className="w-3/4 bg-white shadow-md h-full mx-auto rounded-lg">
         <h2 className="text-center text-2xl mt-8 font-bold">
           {submitted ? "User Details" : "User Information Form"}
         </h2>
