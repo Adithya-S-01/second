@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Signup.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 
 function SignUp() {
   const [formData, setFormData] = useState({
@@ -9,6 +9,7 @@ function SignUp() {
     password: '',
     termsAccepted: false,
   });
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({
@@ -48,9 +49,10 @@ function SignUp() {
       const data = await response.json();
       if (data.success) {
         alert('Sign up successful!');
-        // Redirect to login or dashboard
+        navigate("/home");
       } else {
-        alert('Sign up failed: ' + data.message);
+        alert(data.message);
+        navigate("/Home");
       }
     } catch (error) {
       console.error('Error during signup:', error);

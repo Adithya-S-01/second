@@ -24,7 +24,7 @@ const HomePage = () => {
               into manageable steps.
             </p>
             <Link
-              to="/set-goals"
+              to="/setgoal"
               className="px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300"
             >
               Start Setting Goals
@@ -39,7 +39,7 @@ const HomePage = () => {
               can save, and make smarter financial decisions.
             </p>
             <Link
-              to="/transactions"
+              to="/transaction"
               className="px-6 py-2 w-full bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300"
             >
               Start Tracking

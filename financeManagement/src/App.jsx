@@ -11,6 +11,7 @@ import SignUp from './component/signup/SignUp';
 import Home from './component/Home/Home';
 import BudgetandSaving from './component/Budget/BudgetandSaving';
 import Profile from './component/Profile/Profile';
+import InvestmentDashboard from './component/investmentDashboard/investmentDashboard';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,6 +28,7 @@ function App() {
             <Route path="home" element={<Home />} />
             <Route path="budget" element={<BudgetandSaving />} />
             <Route path="setgoal" element={<Setgoal />} />
+            <Route path="investmentdashboard" element={<InvestmentDashboard/>}/>
             <Route path="transaction" element={<Transaction />} />
             <Route path="profile" element={<Profile/>}/>
           </Route>

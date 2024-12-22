@@ -59,7 +59,7 @@ function Setgoal() {
         ...formData,
         monthlyInvestment,
         investmentAdvice:
-          annualRate > 8 && annualRate <= 15 ? "Invest in Nifty" : "Invest in FD",
+          annualRate > 8 && annualRate <= 100 ? "Invest in Equity markets" : "Invest in FD",
       },
     ]);
 
